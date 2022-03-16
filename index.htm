@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="allCalculator">
+
+        <div class="navbar">
+            <ul class="cal">calc</ul>
+            <ul></ul>
+            <ul class="theme">THEME</ul>
+            
+            <div class="optionTheme">
+                <ul class="opNum">1</ul>
+                <ul class="opNum">2</ul>
+                <ul class="opNum">3</ul>
+
+                <div class="barra">
+                    <div class="circule"></div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <form name="calculator">
+            <input class="result" type="textfield" name="ans" value="" autocomplete="off" readonly>
+
+            <div class="buttons">
+               <input id="numOp" type="button" value="7" onclick="document.calculator.ans.value+='7'">
+                <input id="numOp" type="button" value="8" onclick="document.calculator.ans.value+='8'">
+                <input id="numOp" type="button" value="9" onclick="document.calculator.ans.value+='9'">
+                <input id="del" type="button" value="DEL" onclick="document.calculator.ans.value=(0.1)*(calculator.ans.value-calculator.ans.value%10)">
+
+                <input id="numOp" type="button" value="4" onclick="document.calculator.ans.value+='4'">
+                <input id="numOp" type="button" value="5" onclick="document.calculator.ans.value+='5'">
+                <input id="numOp" type="button" value="6" onclick="document.calculator.ans.value+='6'">
+                <input id="numOp" type="button" value="+" onclick="document.calculator.ans.value+='+'">
+
+                <input id="numOp" type="button" value="1" onclick="document.calculator.ans.value+='1'">
+                <input id="numOp" type="button" value="2" onclick="document.calculator.ans.value+='2'">
+                <input id="numOp" type="button" value="3" onclick="document.calculator.ans.value+='3'">
+                <input id="numOp" type="button" value="-" onclick="document.calculator.ans.value+='-'">
+
+                <input id="numOp" type="button" value="." onclick="document.calculator.ans.value+='.'">
+                <input id="numOp" type="button" value="0" onclick="document.calculator.ans.value+='0'">
+                <input id="numOp" type="button" value="/" onclick="document.calculator.ans.value+='/'">
+                <input id="numOp" type="button" value="*" onclick="document.calculator.ans.value+='*'">
+
+                <input id="reset" type="reset" value="RESET" >
+                <input id="igual" type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+
+            </div>
+                
+        </form>
+    </div>
+</body>
+</html>
